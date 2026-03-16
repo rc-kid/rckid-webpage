@@ -7,41 +7,44 @@
     body {
         margin: 0;
         height: 100vh;
-        background: black;
+         
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("right.jpg"), url("left.jpg");
+        background-position: center, left top, right top;
+        background-size: 100% 100%, 50% 100%, 50% 100%;
+        background-repeat: no-repeat;
         display: flex;
         justify-content: center;
         align-items: center;
         font-family: Arial, sans-serif;
+        font-size: 2em;
     }
 
     .container {
         text-align: center;
-        color: white;
+        color: yellow;
     }
 
     img {
-        max-width: 300px;
-        height: auto;
+        height: 50vh;
         display: block;
         margin: 0 auto 20px auto;
     }
 
     a:link {
-        color: #0d6efd; /* normal blue */
+        color: #ff00ff; 
     }
 
     a:visited {
-        color: #0d6efd; /* same blue even after visiting */
+        color: #ff00ff; 
     }
 
     a:hover {
-        color: #0b5ed7; /* optional hover color */
+        color: #ff00ff; 
     }
 
     a:active {
-        color: #0a58ca; /* optional click color */
+        color: #ff00ff; 
     }
-
 
 </style>
 </head>
@@ -49,7 +52,7 @@
 
 <div class="container">
     <img src="logo.png" alt="Centered Image">
-    <a href="https://github.com/rc-kid/rckid/blob/main/VISION.md">Vision</a> - <a href="https://github.com/rc-kid/rckid/">GitHub</a>
+    <p><a href="https://github.com/rc-kid/rckid/blob/main/VISION.md">Vision</a> - <a href="https://github.com/rc-kid/rckid/">GitHub</a></p>
 </div>
 
 </body>
